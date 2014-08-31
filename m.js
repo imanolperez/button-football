@@ -701,7 +701,7 @@ c.width = W;
   
 
   c.addEventListener("touchend", function(e) {
-
+  	alert(8);
   	 //e.preventDefault();
   	//tos(e.touches[0].clientX, e.touches[0].clientY);
   	toe(e.touches[0].clientX, e.touches[0].clientY);
