@@ -694,7 +694,7 @@ c.width = W;
 
   c.addEventListener("mousedown", function(e) {
 
-  	 e.preventDefault();
+  	 //e.preventDefault();
   	//tos(e.touches[0].clientX, e.touches[0].clientY);
   	tos(e.clientX, e.clientY);
   }, false);
@@ -702,7 +702,7 @@ c.width = W;
 
   c.addEventListener("mouseup", function(e) {
 
-  	 e.preventDefault();
+  	 //e.preventDefault();
   	//tos(e.touches[0].clientX, e.touches[0].clientY);
   	toe(e.clientX, e.clientY);
   }, false);
