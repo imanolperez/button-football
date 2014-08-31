@@ -693,7 +693,7 @@ c.height = H;
 c.width = W;
 
   c.addEventListener("mousedown", function(e) {
-
+  	alert(8);
   	 //e.preventDefault();
   	//tos(e.touches[0].clientX, e.touches[0].clientY);
   	tos(e.clientX, e.clientY);
