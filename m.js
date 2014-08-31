@@ -617,7 +617,7 @@ function init() {
 			break;
 		case 1:
 			st+=1;
-			tx('Use LEFT or RIGHT arrows to select different players', ctx);
+			tx('Use LEFT or RIGHT arrows to select different players.', ctx);
 			setTimeout(init, 4000);
 			break;
 		case 2:
@@ -627,16 +627,31 @@ function init() {
 			break;
 		case 3:
 			st+=1;
-			tx('and release it to kick', ctx);
+			tx('and release it to kick.', ctx);
 			setTimeout(init, 4000);
 			break;
 		case 4:
 			st+=1;
-			tx('Press UP or DOWN to change of player', ctx);
+			tx('Press UP or DOWN to change of player.', ctx);
+			setTimeout(init, 4000);
+			break;
+		case 5:
+			st+=1;
+			tx('If you\'re using a touchscreen, use the arrows to aim,', ctx);
+			setTimeout(init, 4000);
+			break;
+		case 6:
+			st+=1;
+			tx('touch another player to swich of players, and touch anywhere to kick.', ctx);
+			setTimeout(init, 4000);
+			break;
+		case 6:
+			st+=1;
+			tx('Please, play in landscape mode for a better experience.', ctx);
 			setTimeout(init, 4000);
 			break;
 
-		case 5:
+		case 8:
 			st+=1;
 			tx('Each team represents an element. Beat the other elements!', ctx);
 			setTimeout(init, 4000);
