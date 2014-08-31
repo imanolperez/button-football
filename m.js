@@ -694,15 +694,16 @@ c.width = W;
 
   c.addEventListener("touchstart", function(e) {
 
-  	 //e.preventDefault();
+  	 e.preventDefault();
   	//tos(e.touches[0].clientX, e.touches[0].clientY);
   	tos(e.touches[0].clientX, e.touches[0].clientY);
   }, false);
   
 
   c.addEventListener("touchend", function(e) {
-  	alert(8);
-  	 //e.preventDefault();
+  	
+  	 e.preventDefault();
+  	 alert(e.touches[0].clientX + " -- " + e.touches[0].clientY);
   	//tos(e.touches[0].clientX, e.touches[0].clientY);
   	toe(e.touches[0].clientX, e.touches[0].clientY);
   }, false);
