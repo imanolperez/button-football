@@ -718,7 +718,18 @@ c.width = W;
   c.addEventListener("touchend", function(e) {
   	
   	 e.preventDefault();
-  	toe();
+  	
+  	 if (win!=-1) {
+		eq1=Math.floor(Math.random()*4);
+		eq2=Math.floor(Math.random()*4);
+		init();
+		win=-1;
+		sc=[0, 0];
+			
+	} else {
+		toe();	
+	}
+  	
   }, false);
   
 
