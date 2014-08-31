@@ -645,7 +645,7 @@ function init() {
 			tx('touch another player to swich of players, and touch anywhere to kick.', ctx);
 			setTimeout(init, 4000);
 			break;
-		case 6:
+		case 7:
 			st+=1;
 			tx('Please, play in landscape mode for a better experience.', ctx);
 			setTimeout(init, 4000);
