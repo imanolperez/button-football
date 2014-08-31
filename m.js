@@ -71,7 +71,7 @@ function tos(x, y) {
 	}
 }
 
-function toe(x, y) {
+function toe() {
 	
 	if (dir==0&&loading==1) {
 		
@@ -703,9 +703,7 @@ c.width = W;
   c.addEventListener("touchend", function(e) {
   	
   	 e.preventDefault();
-  	 alert(e.touches[0].clientX + " -- " + e.touches[0].clientY);
-  	//tos(e.touches[0].clientX, e.touches[0].clientY);
-  	toe(e.touches[0].clientX, e.touches[0].clientY);
+  	toe();
   }, false);
   
 
