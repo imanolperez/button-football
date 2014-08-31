@@ -692,19 +692,19 @@ H=Math.min(W, H);
 c.height = H;
 c.width = W;
 
-  c.addEventListener("mousedown", function(e) {
+  c.addEventListener("touchtart", function(e) {
 
   	 e.preventDefault();
   	//tos(e.touches[0].clientX, e.touches[0].clientY);
-  	tos(e.clientX, e.clientY);
+  	tos(e.touches[0].clientX, e.touches[0].clientY);
   }, false);
   
 
-  c.addEventListener("mouseup", function(e) {
+  c.addEventListener("touchend", function(e) {
 
   	 e.preventDefault();
   	//tos(e.touches[0].clientX, e.touches[0].clientY);
-  	toe(e.clientX, e.clientY);
+  	toe(e.touches[0].clientX, e.touches[0].clientY);
   }, false);
   
 
