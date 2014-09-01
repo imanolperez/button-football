@@ -51,6 +51,10 @@ function stP() {
 }
 
 function tos(x, y) {
+	if (st!=9) {
+		st=9;
+		init();
+	} else {
 	loading=0;
 	tpl=false;
 	for (i=0;i<te[0].p.length;i++) {
@@ -69,15 +73,21 @@ function tos(x, y) {
 		stP2();
 		loading=1;
 	}
+	}
 }
 
 function toe() {
+			if (st!=9&&st!=1) {
+		st=9;
+
+	} else {
 	
 	if (dir==0&&loading==1) {
 		
 		stP();
 	}
 	dir=0;
+	}	
 }
 
 
@@ -102,6 +112,11 @@ function stP2() {
 }
 
 function u(e) {//Key up
+	
+		if (st!=9&&st!=1) {
+		st=9;
+
+	} else {
 	k = ('which' in e) ? e.which : e.keyCode;
 	if (k==39||k==37) {
 		dir=0;
@@ -110,11 +125,16 @@ function u(e) {//Key up
 	  		stP();
 			
 	}
+	}
 		
 	
 }
 
 function d(e) {//Key down
+	if (st!=9) {
+		st=9;
+		init();
+	} else {
 	if (win!=-1) {
 		eq1=Math.floor(Math.random()*4);
 		eq2=Math.floor(Math.random()*4);
@@ -148,6 +168,7 @@ function d(e) {//Key down
 					break;
 			}
 
+	}
 	}
 }
 
