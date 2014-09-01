@@ -634,6 +634,21 @@ function init() {
 		case 0:
 			st+=1;
 			tx('Button Football', ctx);
+
+			ctx.fillStyle = "rgb(250, 0, 0)";
+	font=24;
+	ctx.font = font + "px Helvetica";
+	t="Press any button to skip..."
+	while (ctx.measureText(t).width>0.9*W) {
+		font-=1;
+		ctx.font = font + "px Helvetica";
+	}
+	
+	ctx.textAlign = "center";
+	ctx.textBaseline = "top";
+	ctx.fillText(t, 0.5*W, 0.5*H+2*font);
+
+
 			setTimeout(init, 4000);
 			break;
 		case 1:
